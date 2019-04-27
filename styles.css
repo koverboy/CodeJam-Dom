@@ -1,0 +1,25 @@
+main {
+    display: flex;
+}
+
+.figures {
+    padding-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    height: 800px;
+    width: 800px;
+    border: black solid;
+    box-shadow: 0 0 10px brown;
+}
+.figures > div{
+    box-shadow: 0 0 10px salmon;
+    width: 200px;
+    height: 200px;
+    border: black solid;
+}
+
+.option{
+    height: 800px;
+
+}
