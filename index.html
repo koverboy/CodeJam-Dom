@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>CodeJam-Dom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header></header>
-<main>
+<div class="container">
+    <div class="tools-bar">
+        <div class="tools">
+            <button class="bucket" id="bucket">
+                <p>Paint bucket</p>
 
-<div class="option">
-    <div class="option__controls">
-        <ul>
-            <li class="option__controls_Bucket">Paint bucket</li>
-            <li class="option__controls_Color">Choose Color</li>
-            <li class="option__controls_Move">Move</li>
-            <li class="option__controls_Transform">Transform</li>
-        </ul>
+            </button>
+            <button class="color-picker" id="color-picker">
+                <p>Choose Color</p>
+            </button>
+            <div class="color-choose-bar" id="color-bar">
+                <div class="color-item" id="brown"></div>
+                <div class="color-item" id="black"></div>
+                <div class="color-item" id="green"></div>
+                <div class="color-item" id="magenta"></div>
+            </div>
+            <button class="move" id="move">
+                <p>Move</p>
+            </button>
+            <button class="transform" id="transform">
+                <p>Transform</p>
+
+            </button>
+        </div>
+        <div class="colors-bar">
+            <div class="current-color color-bar-item" id="current-color color-bar-item">
+                <p>Current color</p>
+                <div class="color-circle" id="current-circle"></div>
+            </div>
+            <div class="prev-color color-bar-item" id="prev-color color-bar-item">
+                <p>Prev color</p>
+                <div class="color-circle" id="prev-circle"></div>
+            </div>
+            <div class="red-color color-bar-item" id="red-color color-bar-item">
+                <p>Red</p>
+                <div class="color-circle" id="red-circle"></div>
+            </div>
+            <div class="blue-color color-bar-item" id="blue-color color-bar-item">
+                <p>Gradient</p>
+                <div class="color-circle" id="gradient-circle"></div>
+            </div>
+        </div>
     </div>
-
-    <div class="option__colors">
-        <div class="option__colors_current">Current color</div>
-        <div class="option__colors_prev">Prev color</div>
-        <div class="option__colors_Red">Red</div>
-        <div class="option__colors_Random">random</div>
+    <div class="canvas-block">
+        <div class="draw-block" id="draw-block">
+            <div class="element" id="element" style="grid-column: 1; grid-row: 1;"></div>
+            <div class="element" id="element" style="grid-column: 2; grid-row: 1;"></div>
+            <div class="element" id="element" style="grid-column: 3; grid-row: 1;"></div>
+            <div class="element" id="element" style="grid-column: 1; grid-row: 2;"></div>
+            <div class="element" id="element" style="grid-column: 2; grid-row: 2;"></div>
+            <div class="element" id="element" style="grid-column: 3; grid-row: 2;"></div>
+            <div class="element" id="element" style="grid-column: 1; grid-row: 3;"></div>
+            <div class="element" id="element" style="grid-column: 2; grid-row: 3;"></div>
+            <div class="element" id="element" style="grid-column: 3; grid-row: 3;"></div>
+        </div>
     </div>
 </div>
-    <div class="figures">
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-        <div id="figures_block"></div>
-    </div>
-</main>
-<footer></footer>
-
+<script src="script.js"></script>
 </body>
+
 </html>
