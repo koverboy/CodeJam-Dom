@@ -1,2 +1,2 @@
 # CodeJam-Dom
-https://koverboy.github/codejam-dom/
+https://github.com/koverboy/CodeJam-Dom
